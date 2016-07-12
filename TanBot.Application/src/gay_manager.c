@@ -1,4 +1,5 @@
 #include <string.h>
+#include <sql.h>
 
 #include "gay_manager.h"
 

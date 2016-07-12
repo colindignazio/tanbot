@@ -66,4 +66,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="libraries\sqlite3.dll" />
+  </ItemGroup>
 </Project>

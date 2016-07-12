@@ -74,6 +74,7 @@
     <TargetName>$(SolutionName)</TargetName>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(ProjectDir)/libraries</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -141,6 +142,9 @@
     <ClInclude Include="src\gay_manager.h" />
     <ClInclude Include="src\message_handler.h" />
     <ClInclude Include="src\plugin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libraries\sqlite3.dll" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
