@@ -21,6 +21,7 @@
 #include "ts3_functions.h"
 #include "plugin.h"
 #include "message_handler.h"
+#include "data_access.h"
 
 static struct TS3Functions ts3Functions;
 
@@ -124,6 +125,9 @@ int ts3plugin_init() {
     ts3Functions.getConfigPath(configPath, PATH_BUFSIZE);
 	ts3Functions.getPluginPath(pluginPath, PATH_BUFSIZE);
 
+	if (!create_data_access_handle())
+		return 1;
+
 	printf("PLUGIN: App path: %s\nResources path: %s\nConfig path: %s\nPlugin path: %s\n", appPath, resourcesPath, configPath, pluginPath);
 
     return 0;  /* 0 = success, 1 = failure, -2 = failure but client will not show a "failed to load" warning */
@@ -134,7 +138,7 @@ int ts3plugin_init() {
 
 /* Custom code called right before the plugin is unloaded */
 void ts3plugin_shutdown() {
-    /* Your plugin cleanup code here */
+	free_data_access_handle();
     printf("PLUGIN: shutdown\n");
 
 	/*
@@ -778,6 +782,7 @@ int ts3plugin_onTextMessageEvent(uint64 serverConnectionHandlerID, anyID targetM
 
 	CLIENT_MESSAGE* client_message = create_client_message(fromID, fromName, fromUniqueIdentifier, message);
 	handle_message(client_message);
+	free_client_message(client_message);
 
 #if 0
 	{

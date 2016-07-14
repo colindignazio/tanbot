@@ -125,6 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\client_commands.c" />
+    <ClCompile Include="src\data_access.c" />
     <ClCompile Include="src\gay_manager.c" />
     <ClCompile Include="src\message_handler.c" />
     <ClCompile Include="src\plugin.c" />
@@ -139,6 +140,7 @@
     <ClInclude Include="include\teamspeak\public_rare_definitions.h" />
     <ClInclude Include="include\ts3_functions.h" />
     <ClInclude Include="src\client_commands.h" />
+    <ClInclude Include="src\data_access.h" />
     <ClInclude Include="src\gay_manager.h" />
     <ClInclude Include="src\message_handler.h" />
     <ClInclude Include="src\plugin.h" />

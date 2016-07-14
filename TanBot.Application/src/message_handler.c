@@ -22,3 +22,8 @@ CLIENT_MESSAGE* create_client_message(anyID fromID, char* fromName, char* fromUn
 
 	return new_client_message;
 }
+
+void free_client_message(CLIENT_MESSAGE* message) {
+	free(message);
+}
+

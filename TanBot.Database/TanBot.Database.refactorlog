@@ -7,4 +7,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="lastIncident" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="e1d0b9f3-13c1-46c8-bead-fb58deb96640" ChangeDateTime="07/14/2016 00:11:41">
+    <Property Name="ElementName" Value="[dbo].[GayCounter].[username]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[GayCounter]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Username" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ffa88996-b8ea-4112-b669-3480172fad80" ChangeDateTime="07/14/2016 00:11:49">
+    <Property Name="ElementName" Value="[dbo].[GayCounter].[gayCount]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[GayCounter]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GayCount" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7c414ea0-f9a2-4278-9327-1cd7b2f89215" ChangeDateTime="07/14/2016 00:11:51">
+    <Property Name="ElementName" Value="[dbo].[GayCounter].[lastIncident]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[GayCounter]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LastIncident" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2f78bbd1-0093-4365-b84f-6f61124e8c69" ChangeDateTime="07/14/2016 00:15:11">
+    <Property Name="ElementName" Value="[dbo].[GayCounter].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[GayCounter]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GayCounterId" />
+  </Operation>
 </Operations>

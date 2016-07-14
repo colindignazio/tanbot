@@ -27,6 +27,9 @@
     <ClCompile Include="src\plugin.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\data_access.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\client_commands.h">
@@ -63,6 +66,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\ts3_functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data_access.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
