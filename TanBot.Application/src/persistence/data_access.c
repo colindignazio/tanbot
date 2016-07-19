@@ -6,8 +6,6 @@
 static SQLHENV env;
 static SQLHDBC dbc;
 
-
-
 bool create_data_access_handle() {
 	SQLRETURN ret; /* ODBC API return status */
 	bool result;
@@ -71,4 +69,12 @@ void free_data_access_handle() {
 	/* free up allocated handles */
 	SQLFreeHandle(SQL_HANDLE_DBC, dbc);
 	SQLFreeHandle(SQL_HANDLE_ENV, env);
+}
+
+SQLHDBC get_sql_handler() {
+	return dbc;
+}
+
+SQLHENV get_env() {
+	return env;
 }

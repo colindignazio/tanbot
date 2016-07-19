@@ -21,7 +21,7 @@
 #include "ts3_functions.h"
 #include "plugin.h"
 #include "message_handler.h"
-#include "data_access.h"
+#include "persistence/data_access.h"
 
 static struct TS3Functions ts3Functions;
 

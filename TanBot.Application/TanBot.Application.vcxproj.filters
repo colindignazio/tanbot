@@ -27,7 +27,13 @@
     <ClCompile Include="src\plugin.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\data_access.c">
+    <ClCompile Include="src\persistence\data_access.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\persistence\gay_access.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers\string_helper.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -68,7 +74,13 @@
     <ClInclude Include="include\ts3_functions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\data_access.h">
+    <ClInclude Include="src\persistence\data_access.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\persistence\gay_access.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\string_helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

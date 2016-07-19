@@ -10,6 +10,7 @@
 
 bool create_data_access_handle();
 void free_data_access_handle();
-
+SQLHDBC get_sql_handler();
+SQLHENV get_env();
 
 

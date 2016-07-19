@@ -12,7 +12,7 @@ void handle_message(CLIENT_MESSAGE* message) {
 	}
 }
 
-CLIENT_MESSAGE* create_client_message(anyID fromID, char* fromName, char* fromUniqueIdentifier, char* message) {
+CLIENT_MESSAGE* create_client_message(anyID fromID, const char* fromName, const char* fromUniqueIdentifier, const char* message) {
 	CLIENT_MESSAGE* new_client_message = (CLIENT_MESSAGE*) malloc(sizeof(CLIENT_MESSAGE));
 
 	new_client_message->fromID = fromID;
